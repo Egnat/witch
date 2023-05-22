@@ -1,38 +1,379 @@
-.App {
-  text-align: center;
+/*@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');*/
+
+::-webkit-scrollbar {
+width:.1px;
+height:5px;
+pacity:.02
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar-button {
+height:50px;
+background:#42e10e
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar-track {
+background:#274dd7
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+::-webkit-scrollbar-track-piece {
+background:#e91e63
+}
+
+::-webkit-scrollbar-thumb {
+background:#fbe100;
+border-radius:10px;
+-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3)
+}
+
+html {
+min-width:1280px;/*когда первый экран состоит из фото(один блок) и фото с текстом (др.блок)
+и они находятся в общем блоке с дисплеем флекс, то в медиа запросах нужно делать min-width штмлю меньше, как в меди запросах, в этом документе*/
+}
+
+body {
+margin:0;
+padding:0;
+font-family:'Alice';
+font-size:25px;
+ackground-color:#000;
+background-image:url(../public/images/hut.png);/*https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYJ7PdBL9lyIB2s1NzmRKPiphqkegfel0Vb3Am2lhX&s*/
+webkit-filter:blur(135px);
+ackground-repeat: round;
+backdrop-filter: brightness(0.8) grayscale(86%) contrast(1) blur(0px);;/*отлично сделал эффекты фото бэкграунду*/
+background-size:cover;
+background-repeat:no-repeat;
+ackground-attachment:fixed;/*для фото не пойдёт, при еменьшении экрана режет фото*/
+ox-shadow:inset 1280px 844px rgb(9 16 255 / 0%);
+}
+
+* {
+box-sizing:border-box;
+}
+
+section {margin-top: 100px;}
+
+.continer {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 881p;
+  ackground-image: url(../public/images/hut.png);
+  background-size: cover;
+}
+
+.filter-bigPhoto {margin: 0;}
+
+.bigPhoto {
+  width: 1280px;
+  height: 1100px;
+}
+
+.headerContiner {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.headerContiner-content {
+  padding-top: 70px;
+}
+
+.title {
+  margin: 0;
+  font-family: 'Alice';
+font-style: normal;
+font-weight: 400;
+font-size: 57px;
+line-height: 73px;
+letter-spacing: 0.015em;
+color: #FFFFFF;
+text-shadow: 1px 0 1px #fd0404, 0 1px 1px #dd1212, -1px 0 1px #d31111, 0 -1px 1px #d11111;/*обводка текста (красная)*/
+/*text-shadow: 1px 1px 1px #d31111; тоже можно использовать*/
+}
+
+.storyContiner-content {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.firstParagraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text {
+  /*border: solid 1px black;  Параметры рамки и прописывать им бордер*/
+  /*padding: 5px;  Поля вокруг текста можно делать рамки вокруг текста*/
+  margin: 0;
+  font-family: 'Alice';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+.text2 {
+  margin: 0;
+  font-family: 'Alice';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 29px;
+  letter-spacing: 0.06em;;
+  color: #FFFFFF;
+}
+
+.filterPhoto-firstParagraph {
+  display: flex;
+  ustify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 22px;
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+/*.bonfire, .people2, .people {
+  width: 300px;
+}*/
+
+.photo {
+  width: 300px;
+  z-index: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.roud {
+  width: 600px;
+  height: 175px;
 }
+
+rest {
+  width: 300px;
+  height: 200p;
+  /*margin: 0;
+  background-image: url(../public/images/photo-2.png);
+  ackground-repeat: round;
+  background-size: cover;*/
+}
+
+.filterPhoto-twoParagraph {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 22px;
+  margin: 0;
+}
+
+.witch {width: 400px;}
+
+.threeParagraph {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.common {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text3 {
+  padding-right: 17px;
+  margin: 0;
+  font-family: 'Alice';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 29px;
+  etter-spacing: 0.06em;;
+  color: #FFFFFF;
+}
+.roud2 {
+  width: 682px;
+  height: 175px;
+  margin-right: 267px;
+  margin-top: -65px;
+  z-index: -1;
+}
+
+.fourParagraph {
+  height: 383px;
+  margin-top: -93px;
+}
+
+.common2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.text4 {
+  padding-bottom: 60px;
+  padding-left: 18px;
+  margin: 0;
+  font-family: 'Alice';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 29px;
+  letter-spacing: 0.06em;;
+  color: #FFFFFF;
+}
+
+.roud3 {
+  width: 600px;
+  height: 200px;
+  /*padding-left: 36px; */
+     margin-left: 221px; 
+     margin-top: -95px; 
+    /* padding-bottom: 74px; */
+    z-index: -1;
+   /* position: absolute;
+    bottom: -106px;
+    left: 260px;*/
+}
+
+.textFooter {
+  margin: 0;
+  font-family: 'Alice';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 29px;
+/* identical to box height */
+
+color: #FFFFFF;
+}
+
+/* Responsive */
+
+/*@media screen and (max-width: 1300px) {}*/
+
+/* Large: 992px - 1199px */
+@media screen and (max-width: 1199px) {
+    html {min-width: 1199px;}
+   .headerContiner {max-width: 720px;}
+   .storyContiner, .footerContiner {max-width: 960px;}
+   .photo {width: 285px;}
+   .rest {width: 285px;}
+   .title {font-size: 63px;}
+   .roud {
+    width: 384px;
+    height: 121px;
+  }
+   .threeParagraph {gap: 150px;}
+   .text2 {max-width: 960px;}
+   .roud2 {
+      display: none;
+      margin-right: 196px;
+      margin-top: -56px;
+ }
+   .text4 {padding-bottom: 16px;}
+   .roud3 {display: none;}
+}
+
+/*@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 800px) {
+ html {min-width: 800px;}
+}*/
+
+/* Medium: 768px - 991px*/ 
+@media screen and (max-width: 991px) {
+    html {min-width: 991px;}
+    .headerContiner {max-width: 720px;}
+    .continer {width: 720px;}
+    .storyContiner {width: 720px;}
+    .filterPhoto-firstParagraph {
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .title {width: 694px;}
+    .rest {width: 285px;}
+    .roud, .bonfire, .people2 {display: none;}
+    .common {
+      flex-direction: column;
+      align-items: center;
+  }
+   .text {text-align: center;}
+   .text2 {width: 720px; text-align: center;}
+   .witch {margin: 0 auto;}
+   .common2 {
+    flex-direction: column-reverse;
+    align-items: center;
+ }
+  .text3 {padding-bottom: 16px; text-align: center;}
+  .text4 {
+    text-align: center;
+  }
+  .footer {margin-top: 100px;}
+}
+
+@media screen and (max-width: 800px) {
+  html {min-width: 800px;}
+}
+
+/*@media screen and (max-width: 768px) {
+ html {min-width: 768px;}
+}*/
+
+ /*Small: 576px - 767px*/
+@media screen and (max-width: 767px) {
+    html {min-width: 767px;}
+    .continer {max-width: 540px;}
+    .title {
+      width: 554px;
+      font-size: 49px;
+ }
+   .rest {width: 285px;}
+   .text2 {width: 540px;}
+   .footer {margin-top: 160px;}
+}
+
+@media screen and (max-width: 425px) {
+  html {min-width: 425px;}
+  .continer {max-width: 320px;}
+  .title {
+    width: 320px;
+    font-size: 30px;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  .photo {width: 230px;}
+  .rest {width: 230px;}
+  .storyContiner-content {gap: 22px}
+  .text, .text3, .text4 {font-size: 26px; text-align: center;}
+  .text2 {
+    max-width: 320px;
+    font-size: 26px;
+    text-align: center;
+  }
+  .filterPhoto-firstParagraph {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .witch {width: 320px;}
+  .text3, .text4 {
+    padding-right: 0px;
+    padding-bottom: 22px;
+    padding-left: 0px;
+ }
+  .threeParagraph {
+    gap: 114px;
+ }
+  .footer {margin-top: 260px;}
+}
+
+@media screen and (max-width: 375px) {
+  html {min-width: 375px;}
+  
+}
+
+@media screen and (max-width: 320px) {
+  html {min-width: 320px;}
+}
+/*overflow: hidden; задаём это свойство блоку, в котором находится картинка и увеличиваем картинку до нужных размеров, даже если она становится больше экрана, не нужная часть картинки скрывается*/ 
