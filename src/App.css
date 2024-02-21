@@ -244,7 +244,6 @@ font-weight: 400;
 font-size: 25px;
 line-height: 29px;
 /* identical to box height */
-
 color: #FFFFFF;
 }
 
@@ -310,11 +309,12 @@ color: #FFFFFF;
   .text4 {
     text-align: center;
   }
-  .footer {margin-top: 100px;}
+  .footer {margin-top: 130px;}
 }
 
 @media screen and (max-width: 800px) {
   html {min-width: 800px;}
+  .footer {margin-top: 180px;}
 }
 
 /*@media screen and (max-width: 768px) {
@@ -331,7 +331,7 @@ color: #FFFFFF;
  }
    .rest {width: 285px;}
    .text2 {width: 540px;}
-   .footer {margin-top: 160px;}
+   .footer {margin-top: 180px;}
 }
 
 @media screen and (max-width: 425px) {
@@ -365,7 +365,9 @@ color: #FFFFFF;
   .threeParagraph {
     gap: 114px;
  }
-  .footer {margin-top: 260px;}
+  .footer {margin-top: 250px;}
+
+  .footerContiner-content {text-align: center;}
 }
 
 @media screen and (max-width: 375px) {
